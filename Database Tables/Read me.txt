@@ -1,0 +1,4 @@
+Instruction to setup Database
+
+1. Create the Database with name "railwayproject"
+2. Then import all the tables one by one in it.
