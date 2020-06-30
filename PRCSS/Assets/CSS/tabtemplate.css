@@ -1,0 +1,368 @@
+@font-face {
+    font-family: "Segoe UI light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+body{
+    background: gainsboro;
+}
+#wrapper {
+    font-family: Segoe UI light;
+}
+#header{
+    font-family: Segoe UI light;
+    position:fixed;
+    padding:0;
+    margin:0;
+    z-index: 1002;
+    left:0;
+    right: 0;
+    background: #006622;
+    min-height: 63px;
+    max-height: 63px;
+    width: 100%;
+}
+#logoutbtn{
+    float: right;
+    margin-right: 2%;
+}
+#incontent{
+    transition: 0.5s;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 63px;
+    margin-bottom: 35px;
+}
+#menubtn {
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    align-content: center;
+    margin-left: 0.8%;
+    margin-top: 3px;
+}
+.btn{
+    border: solid thin white;
+    border-radius: 0px;
+    background: white;
+    color: #006622;
+    transition: 0.3s;
+}
+.btn:hover {
+    border: solid thin white;
+    color: white;
+    background: #006622;
+}
+.bar1, .bar2, .bar3{
+
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.4s;
+}
+#content{
+    font-family: Segoe UI light;
+    color: white;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px) ;
+    transform: rotate(-45deg) translate(-8px, 5px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-7px,-7px);
+    transform: rotate(45deg) translate(-7px,-6px);
+}
+.sidenav {
+    margin-top: 63px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-bottom: 20px;
+}
+
+.sidenavchange{
+    width: 20%;
+    transition: 0.5s;
+}
+
+.incontentchange{
+    padding-left: 20%;
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+.footerchange{
+    margin-right: 0px;
+    transition: 0.5s;
+    padding-right: 20%;
+}
+
+.sidenavcontent{
+    padding-left: 20px;
+}
+
+.list a{
+    font-family: "Segoe UI light";
+    font-size: 20px;
+    color: lightgrey;
+    transition: 0.2s;
+}
+
+.list a:hover{
+    color: white;
+    text-decoration: none !important;
+}
+#footer{
+    width: 100%;
+    height: 30px;
+    background: #006622;
+    z-index: 1002;
+    bottom: 0;
+    position: fixed;
+    border-top: solid thin white;
+    transition: 0.5s;
+}
+
+#fp{
+    font-size: 20px;
+    font-family: "Segoe UI light";
+    color: white;
+    text-align: center;
+}
+#fb{
+    float: right;
+    color: white;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+#fb:hover{
+    opacity: 0.6;
+}
+#parcelmenu, #profilemenu{
+    overflow: hidden;
+}
+.sidenavcontent{
+    padding-bottom: 20px;
+}
+
+#profiledisplay{
+    align-content: center;
+    text-align: center;
+    font-family: "Segoe UI light";
+    color: white;
+}
+
+.searchheading{
+    background: #333333;
+    color: white;
+    height: 50px;
+}
+#subheading h1{
+    background: #333333;
+}
+
+.bt{
+    border: none;
+    background: none;
+    width: 80px;
+    border-radius: 0;
+    outline: none;
+}
+.style{
+    padding-left: 15%;
+    width: 80%;
+}
+.searchbar{
+    border-radius: 0;
+    border: 2px solid #333333;
+    color: black;
+    font-size: 19px;
+}
+.input-group-addon{
+    border-radius: 0;
+    background: #333333;
+    color: white;
+    border: 2px solid #333333;
+    transition: 0.3s;
+}
+input::-webkit-input-placeholder {
+    color: #333333 !important;
+    font-size: 20px;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #333333 !important;
+    font-size: 20px;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #333333 !important;
+    font-size: 20px;
+}
+
+input:-ms-input-placeholder {
+    color: #333333 !important;
+    font-size: 20px;
+}
+
+.searchbar:focus {
+    border: 2px solid #333333;
+    box-shadow: 0 1px 1px rgba(0, 102, 34 , 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.94) !important;
+    outline: 0 none !important;
+}
+
+.input-group-addon:hover{
+    border: 2px solid #333333;
+    border-left: none;
+    background: lightgrey;
+    color: #333333;
+}
+
+.affix {
+    top:63px;
+    width: 100%;
+}
+
+
+.nav-style{
+    border-radius: 0;
+    background: #333333;
+    z-index: 1002;
+}
+.navbar ul{
+    background: #333333;
+}
+.navbar-toggle{
+    background: none;
+    border-radius: 0;
+    border: 1px solid white;
+}
+.icon-bar{
+    background: white;
+}
+
+.nav-tabs.nav-justified a{
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.2s;
+    border: none;
+}
+.nav-tabs>li>a{
+    border: none;
+    border-radius: 0;
+    border-bottom: 7px solid white;
+}
+.nav-tabs.nav-justified a:hover{
+    background: rgba(0, 102, 34, 0.45);
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: #006622;
+    border: none;
+    color: white;
+}
+.nav-tabs.nav-justified>li>a {
+    border: none;
+    border-radius: 0;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus{
+    border: none;
+}
+.nav-tabs.nav-justified>.active>a:hover{
+    border: none;
+    color: white;
+    background: rgba(0, 102, 34, 0.46);
+}
+.nav-tabs > li.active > a{
+    background: #006622;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+
+    #header{
+        position: fixed;
+    }
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+        position: fixed;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+        height: 16px;
+    }
+    .searchheading{
+        padding-bottom: 5px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    #subheading{
+        font-size: 21px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+}
+@media (max-width: 450px) {
+    .bt{
+        width: 40px;
+    }
+    .style{
+        width: 96%;
+        padding-left: 3%;
+    }
+}

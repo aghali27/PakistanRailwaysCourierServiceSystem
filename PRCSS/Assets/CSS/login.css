@@ -1,0 +1,358 @@
+/* ---------------- Scroll Bar Body ---------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #333333;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #a8e2a9;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 1px solid #006622;
+    background: #a8e2a9;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #a8e2a9;
+}
+
+/*---------------Login Page Styling----------------*/
+
+
+@font-face {
+    font-family: "Segoe UI light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+.loginform {
+    font-family: "Segoe UI light";
+    -moz-font-family: "Segoe UI light";
+    -moz-font-language-override: inherit;
+    max-width: 330px;
+    height: auto;
+    background: white;
+    margin: 100px auto 0;
+}
+
+.loginformheading{
+    padding: 25px 20px;
+    text-align: center;
+    background: #006622;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.loginwrap{
+    padding: 20px;
+    text-align: center;
+}
+
+#login{
+    border: solid 2px #006622;
+    border-radius: 0;
+    background: #006622;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    width: 290px;
+    height: 36px;
+}
+#login:hover{
+    border: solid 2px inherit;
+    color: #006622;
+    background: white;
+}
+#login span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+#login span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+#login:hover span {
+    padding-right: 25px;
+}
+#login:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media (max-width: 360px){
+    #login{
+        width: 100%;
+    }
+}
+
+hr{
+    margin-top: 30px;
+    border: 0;
+    border-top: 1px solid #006622;
+}
+.createaccount{
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.createaccount:hover{
+    color: #006622;
+    text-decoration: none;
+}
+
+
+/*-------------Login Form Styling----------------------------*/
+
+
+.float-label-control { position: relative; margin-bottom: 1.5em; }
+.float-label-control ::-webkit-input-placeholder { color: grey; }
+.float-label-control :-moz-placeholder { color: grey; }
+.float-label-control ::-moz-placeholder { color: grey; }
+.float-label-control :-ms-input-placeholder { color: grey; }
+.float-label-control input:-webkit-autofill {
+    background-color: #333333 !important;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -moz-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; co000000lor: grey; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+.float-label-control input.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
+.float-label-control input:not(.empty) + label { z-index: 1; }
+.float-label-control input:not(.empty):focus + label { color: #006622; }
+
+@keyframes float-labels {
+    0% { opacity: 1; color: #006622; top: 0.1em; font-size: 1.5em; }
+}
+
+@-webkit-keyframes float-labels {
+    0% { opacity: 1; color: #006622; top: 0.1em; font-size: 1.5em; }
+}
+
+.formlogin {
+    color: #333333;
+    font-size: 20px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 100%;
+    padding: 0.1em 0em 1px 0em;
+    outline: none;
+    margin: 0px;
+}
+
+.formlogin:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 2px solid #006622;
+}
+
+/*-----------------Sign Up Styling---------------------------*/
+.signupbtn {
+    width: 100%;
+    color: white;
+    padding: 5px 5px;
+    background-color: #006622;
+    font-size: 20px;
+    border: 2px solid #006622;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+.signupbtn:hover{
+    background: white;
+    color: #006622;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    padding: 0px 0 12px 0;
+    position: relative;
+    top: 0;
+}
+
+/* The Modal (background) */
+.modal {
+    font-family: "Segoe UI light";
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0% auto 15% auto; /* from the top, 15% from the bottom and centered */
+    border: 2px solid #006622;
+    border-radius: 0;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: #006622;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.infobars{
+    margin-left: 0;
+    font-weight: bolder;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/*-----------------------------------------------------------------*/
+
+.formsignup{
+    border-radius: 0;
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    outline: 0;
+    font-weight: bold;
+    border: 1px solid #b8b8b8;
+    color: #333333;
+    font-size: 17px;
+}
+.formsignup:focus{
+    border: solid thin #006622;
+    outline: 0 none !important;
+}
+#signup {
+    align-content: center;
+    max-width: 100%;
+}
+#signup > div {
+    position: relative;
+    overflow: hidden;
+}
+
+#signup input:focus + .formlabel{
+    background: #006622;
+    color: white;
+    font-size: 75%;
+    padding: 1px 6px;
+    z-index: 2;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+#signup .formlabel {
+    -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+    font-weight: normal;
+}
+#signup .formlabel {
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    margin-right: -100%;
+}
+#signup input:focus + .formlabel {
+    right: 0;
+    margin-right: 0;
+    width: 40%;
+    padding-top: 5px;
+}
+
+#signup .formlabel {
+    -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+    font-weight: normal;
+}
+
+@media (max-height: 514px) {
+
+    .loginform{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 400px){
+
+    .modal-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 280px) {
+    #signupheading{
+        font-size: 27px;
+    }
+}

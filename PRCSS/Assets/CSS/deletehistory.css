@@ -1,0 +1,277 @@
+.sign{
+    font-family: "Glyphicons Halflings";
+    float: right;
+    color: lightgrey;
+    font-size: 20px;
+    padding-top: 2px;
+}
+.searchheading{
+    background: #006622;
+    color: white;
+}
+.searchheading h1{
+    margin-bottom: 0;
+}
+
+.searchbtns{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    background: #006622;
+    color: lightgrey ;
+    border: none;
+    font-size: 25px;
+    outline: none;
+}
+.searchbtns:hover{
+    color: white;
+}
+.panel{
+    width: 100%;
+    border: 2px solid #006622;
+    background: white;
+    height: 100px;
+    border-radius: 0;
+    align-content: center;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+.bt{
+    border: none;
+    background: none;
+    width: 80px;
+    border-radius: 0;
+    outline: none;
+}
+.style{
+    width: 80%;
+    padding-left: 15%;
+}
+.searchbar{
+    border-radius: 0;
+    border: 2px solid #006622;
+    color: #006622;
+    font-size: 19px;
+}
+.input-group-addon{
+    border-radius: 0;
+    background: #ca0009;
+    color: #ffdac4;
+    border: 2px solid #ca0009;
+    transition: 0.3s;
+}
+input::-webkit-input-placeholder {
+    color: #006622 !important;
+    font-size: 20px;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #006622 !important;
+    font-size: 20px;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #006622 !important;
+    font-size: 20px;
+}
+
+input:-ms-input-placeholder {
+    color: #006622 !important;
+    font-size: 20px;
+}
+
+.searchbar:focus {
+    border: 2px solid #006622;
+    box-shadow: 0 1px 1px rgba(0, 102, 34 , 0.075) inset, 0 0 8px rgba(32, 136, 0, 0.94) !important;
+    outline: 0 none !important;
+}
+
+.input-group-addon:hover{
+    border: 2px solid #ca0009;
+    border-left: none;
+    background: #ffdac4;
+    color: #ca0009;
+}
+
+#panel2{
+    height: 150px;
+}
+
+.date-label{
+    width: 5%;
+    margin: 1%;
+}
+#panel2 .date-bt{
+    margin-top: 20px;
+}
+.date-bt{
+    width: 100%;
+    border-radius: 0;
+    background: #ca0009;
+    font-size: 17px;
+    font-weight: bold;
+    height: 35px;
+    text-align: center;
+    color: #ffdac4;
+    border: 2px solid #ca0009;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.date-bt:hover{
+    border: 2px solid #ca0009;
+    background: #ffdac4;
+    color: #ca0009;
+}
+
+.modal-content{
+    border-radius: 0;
+    border: 2px solid #333333;
+}
+
+@media (max-width: 768px) {
+
+    #header{
+        position: absolute;
+    }
+
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+    .bt{
+        width: 40px;
+    }
+    .style{
+        width: 96%;
+        padding-left: 3%;
+    }
+}
+@media (max-width: 835px) {
+    .date-label{
+        width: 96%;
+        margin-left: 3%;
+    }
+    #date-input{
+        width: 96%;
+        margin-left: 3%;
+    }
+    #panel2{
+        padding: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .date-label{
+        width: 96%;
+        margin-left: 3%;
+    }
+    #date-input{
+        width: 96%;
+        margin-left: 3%;
+    }
+    #panel2{
+        padding: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+    .searchbtns{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    #subheading{
+        font-size: 21px;
+    }
+    .searchbtns{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+    .searchbtns{
+        font-size: 17px;
+    }
+}
+
+
+
+
+#datepicker1 .ui-datepicker {
+    background: #fcfcfc; /* Old browsers */
+    background: #fff -moz-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* FF3.6+ */
+    background: #fff -webkit-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* Chrome10+,Safari5.1+ */
+    background: #fff -o-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* Opera11.10+ */
+    background: #fff -ms-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* IE10+ */
+    background: #fff linear-gradient(top, #fcfcfc 0%, #fff 100%); /* W3C */
+    font-size:11px;
+    padding:10px;
+    border:1px solid #ca0009;
+    display:none;
+}
+
+#datepicker1 .ui-datepicker table {
+    width:278px;
+}
+
+#datepicker1 .ui-datepicker table td {
+    text-align:center;
+}
+
+#datepicker1 .ui-datepicker a {
+    cursor:pointer;
+    text-decoration:none;
+}
+
+#datepicker1 .ui-datepicker-prev {
+}
+
+#datepicker1 .ui-datepicker-next {
+    float:right;
+}
+
+#datepicker1 .ui-datepicker-title {
+    text-align: center;
+    font-weight:bold;
+}

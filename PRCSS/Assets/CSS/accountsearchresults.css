@@ -1,0 +1,163 @@
+.searchheading{
+    background: #006622;
+    color: white;
+    height: 50px;
+}
+#subheading h1{
+    background: #006622;
+}
+
+.btn{
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#deacc, #delacc{
+    width: 48%;
+}
+#vhst{
+    width: 98%;
+}
+
+.tab-content{
+    margin-top: 3px;
+}
+
+.modal-content{
+    border-radius: 0;
+    border: 2px solid #333333;
+}
+
+.media{
+    width: 630px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #006622;
+    background: #c4efb7;
+}
+
+.media-body p{
+    text-align: left;
+}
+
+.booked{
+    border: 2px solid #283e69;
+    background: #c5f1ff;
+}
+
+#mediaimg{
+    width: 250px;
+    height: 268px;
+}
+
+
+@media (max-width: 768px) {
+
+    #header{
+        position: fixed;
+    }
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+        position: fixed;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+    }
+    .media{
+        width: 98%;
+    }
+}
+
+@media (max-width: 528px) {
+    #mediaimg{
+        width: 156px;
+        height: 180px;
+    }
+
+    .btn{
+        font-size: 8px;
+    }
+
+    .media{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+        height: 16px;
+    }
+    .searchheading{
+        padding-bottom: 5px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 334px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    #subheading{
+        font-size: 21px;
+        height: 10px;
+    }
+    #mediaimg{
+        width: 120px;
+        height: 130px;
+    }
+
+    .btn{
+        font-size: 7px;
+    }
+    #vhst{
+        margin-bottom: 1px;
+    }
+
+    .media{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+    #mediaimg{
+        width: 100px;
+        height: 110px;
+    }
+
+    .btn{
+        font-size: 6px;
+    }
+    .media{
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,137 @@
+/*---------------Login Page Styling----------------*/
+
+@font-face {
+    font-family: "Segoe UI light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+.loginform {
+    font-family: "Segoe UI light";
+    -moz-font-family: "Segoe UI light";
+    -moz-font-language-override: inherit;
+    max-width: 330px;
+    height: auto;
+    background: white;
+    margin: 100px auto 0;
+}
+
+.loginformheading{
+    padding: 25px 20px;
+    text-align: center;
+    background: #333333;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.loginwrap{
+    padding: 20px;
+    text-align: center;
+}
+
+#login{
+    border: solid 2px #333333;
+    border-radius: 0;
+    background: #333333;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.infobars{
+    margin-left: 0;
+    font-weight: bolder;
+}
+
+#login:hover{
+    border: solid 2px inherit;
+    color: #333333;
+    background: white;
+}
+#login span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+#login span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+#login:hover span {
+    padding-right: 25px;
+}
+#login:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+@media (max-width: 360px){
+    #login{
+        width: 100%;
+    }
+}
+
+
+/*-------------Login Form Styling----------------------------*/
+
+
+.float-label-control { position: relative; margin-bottom: 1.5em; }
+.float-label-control ::-webkit-input-placeholder { color: #00b83c; }
+.float-label-control :-moz-placeholder { color: #00b83c; }
+.float-label-control ::-moz-placeholder { color: #00b83c; }
+.float-label-control :-ms-input-placeholder { color: #00b83c; }
+.float-label-control input:-webkit-autofill {
+    background-color: #006622 !important;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -moz-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #00b83c; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+.float-label-control input.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
+.float-label-control input:not(.empty) + label { z-index: 1; }
+.float-label-control input:not(.empty):focus + label { color: #333333; }
+
+@keyframes float-labels {
+    0% { opacity: 1; color: #333333; top: 0.1em; font-size: 1.5em; }
+}
+
+@-webkit-keyframes float-labels {
+    0% { opacity: 1; color: #333333; top: 0.1em; font-size: 1.5em; }
+}
+
+.formlogin {
+    color: #006622;
+    font-size: 20px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #006622;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 100%;
+    padding: 0.1em 0em 1px 0em;
+    outline: none;
+    margin: 0px;
+}
+
+.formlogin:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 2px solid #333333;
+}
+
+
+
+
+@media (max-height: 514px) {
+
+    .loginform{
+        margin-top: 0;
+    }
+}
+

@@ -1,0 +1,354 @@
+.searchheading{
+    background: #006622;
+    color: white;
+    height: 50px;
+}
+#subheading{
+    float: left;
+    font-size: 30px;
+    height: auto;
+}
+
+#affix1.affix {
+    top:63px;
+}
+
+#affix1.affix + .tab-content {
+    padding-top: 45px;
+}
+
+#affix2.affix {
+    top : 105px;
+    width: 100%;
+}
+
+#affix2.affix + .dr {
+    margin-top: 28px;
+}
+.label{
+    border-radius: 0;
+}
+
+.nav-style{
+    border-radius: 0;
+    background: #006622;
+    z-index: 1000;
+    border-bottom: 2px solid #006622;
+    padding-top: 2px;
+}
+.navbar ul{
+    background: #006622;
+}
+.navbar-toggle{
+    background: none;
+    border-radius: 0;
+    border: 1px solid white;
+}
+.icon-bar{
+    background: white;
+}
+
+.nav-tabs.nav-justified a{
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.2s;
+    border: none;
+}
+.nav-tabs>li>a{
+    border: none;
+    border-radius: 0;
+    border-bottom: 7px solid white;
+}
+.nav-tabs.nav-justified a:hover{
+    background: rgba(51, 51, 51, 0.45);
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: #333333;
+    border: none;
+    color: white;
+}
+.nav-tabs.nav-justified>li>a {
+    border: none;
+    border-radius: 0;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus{
+    border: none;
+}
+.nav-tabs.nav-justified>.active>a:hover{
+    border: none;
+    color: white;
+    background: rgba(51, 51, 51, 0.46);
+}
+.nav-tabs > li.active > a{
+    background: #333333;
+    border: none;
+    color: white;
+}
+
+.tab-content #currstatus,.tab-content #basicinfo{
+    padding-top: 3px;
+}
+
+.modal-content{
+    border-radius: 0;
+    border: 2px solid #333333;
+}
+
+#deliveryreport .dr{
+    margin-top: 3px;
+}
+
+.tablecontainer{
+    border: 2px solid #333333;
+}
+.dr{
+    padding-top: 0;
+    background: white;
+}
+
+.delete-btn{
+    width: 200px;
+    height: 50px;
+    float: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background: #ca0009;
+    border: 2px solid #ca0009;
+    transition: 0.3s;
+    margin: 1%;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background: white;
+    color: #ca0009;
+}
+
+#basicinfo th{
+    font-size: 16px;
+}
+
+#basicinfo td{
+    font-weight: bold;
+}
+
+.th-col{
+    text-align: center;
+    font-size: 40px;
+}
+
+.curr-status{
+    background: white;
+}
+
+#no-more-tables th{
+    font-size: 17px;
+    text-align: center;
+}
+
+#no-more-tables td{
+    text-align: center;
+    font-weight: bold;
+}
+
+#subheading1{
+    font-weight: bold;
+}
+
+.received{
+    border: 2px solid #006622;
+    background: #deffd5;
+    color: #006622;
+}
+
+.sending{
+    border: 2px solid #888800;
+    background: #fffdd5;
+    color: #888800;
+}
+
+.pending{
+    border: 2px solid #880400;
+    background: #ffdac4;
+    color: #880400;
+}
+
+.ntable-container{
+    width: 100%;
+    background: #006622;
+    color: white;
+    padding-top: 10px;
+    z-index: 990;
+}
+
+.notify-table{
+    width: 60%;
+}
+
+.c-color{
+    width: 30px;
+    height: 15px;
+    background-color: #fffdd5;
+}
+.os-color{
+    width: 30px;
+    height: 15px;
+    background-color: #deffd5;
+}
+.oc-color{
+    width: 30px;
+    height: 15px;
+    background-color: #f0bcae;
+}
+@media (max-width: 768px) {
+
+    #affix1.affix + .tab-content {
+        padding-top: 54px;
+    }
+
+    #affix2.affix {
+        top : 114px;
+        width: 100%;
+    }
+
+    #affix2.affix + .dr {
+        margin-top: 27px;
+    }
+
+    #header{
+        position: fixed;
+    }
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+        position: fixed;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+        height: 16px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+    .searchheading{
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    #subheading{
+        font-size: 21px;
+        height: 10px;
+    }
+    .notify-table{
+        font-size: 14px;
+    }
+    .delete-btn{
+        height: 30px;
+        font-size: 15px;
+        padding-top: 0;
+        width: 96%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+    .notify-table{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 630px) {
+    .notify-table{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr{
+        display: block;
+    }
+
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr {
+    }
+
+    #no-more-tables td {
+        border: none;
+        border-bottom: 1px solid gainsboro;
+        position: relative;
+        padding-left: 52%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #no-more-tables td:before{
+        content: attr(data-title);
+    }
+}
+
+@media (max-width: 335px) {
+
+    #no-more-tables td, .tablecontainer td{
+        text-align: right;
+    }
+}

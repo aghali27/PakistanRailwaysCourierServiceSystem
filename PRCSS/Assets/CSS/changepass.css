@@ -1,0 +1,132 @@
+.searchheading{
+    background: #006622;
+    color: white;
+    height: 45px;
+}
+.searchheading h1{
+    margin-bottom: 0;
+}
+
+.pswpanel{
+    background: white;
+    padding-top: 10px;
+    border: 2px solid #006622;
+}
+
+.infobars{
+    margin-left: 14%;
+    font-weight: bolder;
+}
+
+#seclbl {
+    padding-left: 10px;
+    width: 14%;
+    text-align: left;
+}
+
+.form-control{
+    color: #333333;
+    font-weight: bold;
+    border-radius: 0;
+}
+#crpass,#npass,#cnpass{
+    width: 85%;
+}
+.form-control:focus{
+    border: solid thin #006622;
+    box-shadow: 0 1px 1px rgba(0, 102, 34 , 0.075) inset, 0 0 8px rgba(5, 102, 4, 0.94) !important;
+    outline: 0 none !important;
+}
+
+.changepass-btn{
+    width: 96%;
+    margin-left: 2%;
+    background: #333333;
+    border: 2px solid #333333;
+    border-radius: 0;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.changepass-btn:hover{
+    background: white;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+
+    #header{
+        position: absolute;
+    }
+
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+    .searchheading{
+        height: 30px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    #subheading{
+        font-size: 21px;
+    }
+    .searchheading{
+        height: 25px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+}
+@media (max-width: 767px) {
+    #seclbl,#crpass,#npass,#cnpass{
+        margin-left: 1%;
+        width: 98%;
+    }
+}

@@ -1,0 +1,307 @@
+.sub-heading{
+    width: 100%;
+    background: #333333;
+    color: white;
+    height: 77px;
+    top : 63px;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 5px solid #333333;
+}
+#subheading{
+    font-size: 30px;
+    height: auto;
+}
+.notify-table{
+    width: 60%;
+}
+
+.panel-container{
+    margin-top: 142px;
+}
+
+.c-color{
+    width: 30px;
+    height: 15px;
+    background-color: #bef7bc;
+}
+.oc-color{
+    width: 30px;
+    height: 15px;
+    background-color: #f0bcae;
+}
+.o-color{
+    width: 30px;
+    height: 15px;
+    background-color: white;
+}
+
+.details-table th{
+    font-size: 16px;
+}
+
+.details-table td{
+    font-weight: bold;
+}
+
+.receive-form{
+    color: #333333;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.group-label {
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+}
+.o {
+    background: #646968;
+    border-color: #646968;
+}
+.cs {
+    background: #006622;
+    border-color: #006622 ;
+}
+.oc {
+    background: #880400;
+    border-color: #880400;
+}
+
+.topstyle{
+    font-size: 20px;
+}
+.panel{
+    width: 100%;
+    background: none;
+    height: auto;
+    border-radius: 0;
+    align-content: center;
+    margin-bottom: 0;
+}
+.stylepanel{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: white;
+    border: 2px solid #333333;
+    color: #333333;
+}
+
+.cspanel{
+    background: #bef7bc;
+    color: #006622;
+    border: 2px solid #006622;
+}
+
+.ocpanel{
+    background: #f0bcae;
+    color: #880400;
+    border: 2px solid #880400;
+}
+
+.form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    border: solid thin #006622;
+    box-shadow: 0 1px 1px rgba(0, 102, 34 , 0.075) inset, 0 0 8px rgba(5, 102, 4, 0.94) !important;
+    outline: 0 none !important;
+}
+
+.receivebtn{
+    width: 98%;
+    border-radius: 0;
+    background: #006622;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 2px;
+    border: 2px solid #006622;
+    transition: 0.3s;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.receivebtn:hover{
+    background: white;
+    color: #006622;
+    border: 2px solid #006622;
+}
+
+
+@media (max-width: 768px) {
+
+
+    #header{
+        position: fixed;
+    }
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+        position: fixed;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 445px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    #subheading{
+        font-size: 24px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+    .notify-table{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    #subheading{
+        font-size: 20px;
+    }
+    .notify-table{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 18px;
+    }
+    .notify-table{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 630px) {
+    .notify-table{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables td,
+    #no-more-tables tr{
+        display: block;
+    }
+    #no-more-tables th{
+        display: none;
+    }
+
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+
+    #no-more-tables td {
+        border: none;
+        border-bottom: 1px solid gainsboro;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #no-more-tables td:before{
+        content: attr(data-title);
+    }
+
+    .topstyle{
+        font-size: 15px;
+    }
+
+    #form-table table,
+    #form-table thead,
+    #form-table tbody,
+    #form-table th,
+    #form-table td,
+    #form-table tr{
+        display: block;
+    }
+
+    #form-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+
+    #form-table td {
+        border: none;
+        position: relative;
+        padding-left: 1%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #form-table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #form-table td:before{
+        content: attr(data-title);
+    }
+
+    .topstyle{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 335px) {
+
+    #no-more-tables td {
+        text-align: right;
+    }
+}

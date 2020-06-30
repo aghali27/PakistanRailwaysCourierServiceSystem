@@ -1,0 +1,183 @@
+.searchheading{
+    background: #006622;
+    color: white;
+    height: 40px;
+}
+#subheading{
+    font-size: 26px;
+    height: auto;
+}
+
+.tablecontainer{
+    margin-top: 3px;
+    background: white;
+    border: 2px solid #006622;
+}
+
+.tablecontainer td{
+    font-weight: bold;
+}
+
+.tablecontainer th{
+    font-size: 16px;
+}
+
+.label{
+    border-radius: 0;
+}
+.btn{
+    border-radius: 0;
+    background: #006622;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: white;
+    color: #006622;
+    border: 1px solid #006622;
+}
+
+
+@media (max-width: 768px) {
+
+    #header{
+        position: fixed;
+    }
+
+    .sidenav{
+        height: auto;
+    }
+
+    .sidenavchange{
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .incontentchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        transition: 0.5s;
+        position: fixed;
+    }
+
+    .footerchange{
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+        transition: 0.5s;
+    }
+}
+
+
+@media (max-width: 550px) {
+    #subheading{
+        font-size: 20px;
+        height: 16px;
+    }
+    .searchheading{
+        height: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    #mainheading{
+        font-size: 24px;
+    }
+    .searchheading{
+        padding-bottom: 5px;
+    }
+    #content{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 402px) {
+    #subheading{
+        font-size: 17px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 318px) {
+    #mainheading{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 350px) {
+    #subheading{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 293px) {
+    #mainheading{
+        font-size: 18px;
+    }
+    #subheading{
+        font-size: 12px;
+    }
+}
+@media (max-width: 700px) {
+
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr{
+        display: block;
+    }
+
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr {
+        border: 1px solid #006622;
+    }
+
+    #no-more-tables td {
+        border: none;
+        border-bottom: 1px solid gainsboro;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables #btntd{
+        border: none;
+        border-bottom: 1px solid gainsboro;
+        position: relative;
+        padding-left: 1%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #no-more-tables td:before{
+        content: attr(data-title);
+    }
+}
+
+@media (max-width: 335px) {
+    #no-more-tables td{
+        text-align: right;
+    }
+}

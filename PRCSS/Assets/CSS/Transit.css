@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "Segoe UI light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+body{
+    background: gainsboro;
+    font-family: Segoe UI light;
+}
+
+/* ---------------- Scroll Bar Body ---------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    width: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid gainsboro;
+    background: #333333;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+    border: none;
+    background: #006622;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #006622;
+}
+
+/* ------------------------------------------ */
+
+
+#wrapper{
+    font-family: Segoe UI light;
+}
+#header{
+    padding:0;
+    margin:0;
+    position: fixed;
+    left:0;
+    right: 0;
+    background: #006622;
+    height: 63px;
+    width: 100%;
+    z-index: 1002;
+}
+#menubtn {
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    align-content: center;
+    margin-left: 0.8%;
+    margin-top: 3px;
+}
+h2{
+    margin-left: 75px;
+}
+#title{
+    color: white;
+}
+#title:hover{
+    text-decoration: none;
+}
+#img{
+    position: absolute;
+    align-content: center;
+    margin-left: 1%;
+    margin-top: 8px;
+}
+.bar1, .bar2, .bar3{
+
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.4s;
+}
+#content{
+    font-family: Segoe UI light;
+    color: white;
+    margin-top: 0px;
+    padding-bottom: 5px;
+}
+#logoutbtn{
+    float: right;
+    margin-right: 2%;
+    margin-top: 17px;
+}
+#lgbtn{
+    width: 67px;
+    height: 38px;
+    text-align: center;
+    border: solid thin white;
+    border-radius: 0px;
+    background: white;
+    color: #006622;
+    transition: 0.3s;
+}
+#lgbtn:hover {
+    border: solid thin white;
+    color: white;
+    background: #006622;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px) ;
+    transform: rotate(-45deg) translate(-8px, 5px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-7px,-7px);
+    transform: rotate(45deg) translate(-7px,-6px);
+}
+
+#incontent{
+    transition: 0.5s;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 63px;
+}
+.infobar{
+    height: auto;
+    background: #333333;
+    color: white;
+}
+.list a{
+    font-family: "Segoe UI light";
+    font-size: 20px;
+    color: lightgrey;
+    transition: 0.2s;
+}
+
+.list a:hover{
+    color: white;
+    text-decoration: none !important;
+}
+
+.navitem3{
+    text-align: right;
+}
+.navitem2{
+    text-align: center;
+}
+
+#myCarousel{
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+
+.carousel-inner>.item>img{
+    min-width: 100%;
+}
+
+.list-inline{
+    width: 100%;
+    align-content: center;
+}
+
+
+.mntiles {
+    margin-top: 1%;
+    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 150px;
+    background: #006622;
+    border: 3px solid #006622;
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+}
+.mntiles:hover{
+    opacity: 0.9;
+}
+
+.dropdown-menu{
+    width: 200px;
+    background: #333333;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#txt{
+    color: white;
+    font-size: 20px;
+    font-family: "Segoe UI light";
+    transition: 0.2s;
+}
+
+#txt:hover{
+    color: #006622;
+}
+
+#vpic , #upic{
+    transition: 0.3s;
+}
+
+.rot{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#footer{
+    width: 100%;
+    height: 30px;
+    background: #006622;
+    bottom: 0;
+    position: fixed;
+    border-top: solid thin #333333;
+    z-index: 1002;
+    transition: 0.5s;
+}
+
+#fp{
+    font-size: 20px;
+    font-family: "Segoe UI light";
+    color: white;
+    text-align: center;
+}
+#fb{
+    float: right;
+    color: white;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+#fb:hover{
+    opacity: 0.6;
+}
+
+@media (max-width: 767px) {
+    .navitem3{
+        text-align: left;
+    }
+    .navitem2{
+        text-align: left;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .nav{
+        height: 115px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mntiles {
+        font-size: 10px;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 95px;
+        text-align: center;
+    }
+    .dropdown-menu{
+        padding: 0;
+        min-width: 0px;
+        max-width: 100px;
+    }
+    .list-inline{
+        padding-left: 0px;
+    }
+    .tileimg{
+        width: 60px;
+        height: 60px;
+    }
+    #txt{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    #title{
+        font-size: 24px;
+    }
+    h2{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 365px) {
+    .mntiles {
+        margin-bottom: 20px;
+        width: 133px;
+        height: 100px;
+        text-align: center;
+    }
+    .dropdown-menu{
+        max-width: 133px;
+    }
+}
+@media (max-width: 500px) {
+    #carouselimg{
+        width: 900px;
+        height: 170px;
+    }
+    #myCarousel{
+        height: 170px;
+    }
+}
+
+@media (max-width: 341px) {
+    #title{
+        font-size: 20px;
+    }
+    h2{
+        margin-left: 55px;
+    }
+    #img{
+        margin-top: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 300px) {
+    #title{
+        font-size: 16px;
+    }
+    h2{
+        margin-left: 40px;
+    }
+    #lgbtn{
+        width: 50px;
+        height: 30px;
+    }
+    #img{
+        margin-top: 15px;
+        width: 35px;
+        height: 35px;
+    }
+}

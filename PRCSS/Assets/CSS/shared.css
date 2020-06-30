@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Segoe UI light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+body{
+    background: gainsboro;
+}
+/* ---------------- Scroll Bar Body ---------------- */
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        width: 4px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+    ::-webkit-scrollbar-thumb {
+        width: 10px;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border: 1px solid gainsboro;
+        background: #333333;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        border: none;
+        background: #006622;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: #006622;
+    }
+
+/* ---------------- Scroll Bar Side Nav ---------------- */
+
+    .sidenav::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    .sidenav::-webkit-scrollbar-track {
+        -webkit-box-shadow: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .sidenav::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border: 1px solid gainsboro;
+        background: #333333;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+    .sidenav::-webkit-scrollbar-thumb:hover {
+        border: 1px solid #333333;
+        background: gainsboro;
+    }
+    .sidenav::-webkit-scrollbar-thumb:window-inactive {
+        background: white;
+    }
+
+/* ------------------------------------------ */
+#wrapper {
+    font-family: Segoe UI light;
+}
+#header{
+    padding:0;
+    margin:0;
+    position: fixed;
+    left:0;
+    right: 0;
+    z-index: 1002;
+    background: #006622;
+    min-height: 63px;
+    max-height: 63px;
+    width: 100%;
+}
+#logoutbtn{
+    float: right;
+    margin-right: 2%;
+}
+#incontent{
+    transition: 0.5s;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 63px;
+    margin-bottom: 35px;
+}
+#menubtn {
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    align-content: center;
+    margin-left: 0.8%;
+    margin-top: 3px;
+}
+.btn1{
+    border: solid thin white;
+    border-radius: 0px;
+    background: white;
+    color: #006622;
+    transition: 0.3s;
+    width: 68px;
+    height: 34px;
+}
+.btn1:hover {
+    border: solid thin white;
+    color: white;
+    background: #006622;
+}
+.bar1, .bar2, .bar3{
+
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.4s;
+}
+#content{
+    font-family: Segoe UI light;
+    color: white;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px) ;
+    transform: rotate(-45deg) translate(-8px, 5px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-7px,-7px);
+    transform: rotate(45deg) translate(-7px,-6px);
+}
+.sidenav {
+    margin-top: 63px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-bottom: 20px;
+}
+
+.asidenav {
+    cursor: pointer;
+}
+
+.sidenavcontent{
+    padding-left: 20px;
+}
+
+.sidenavchange{
+    width: 20%;
+    transition: 0.5s;
+}
+
+.incontentchange{
+    padding-left: 20%;
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+.footerchange{
+    margin-right: 0px;
+    transition: 0.5s;
+    padding-right: 20%;
+}
+
+.list a{
+    font-family: "Segoe UI light";
+    font-size: 20px;
+    color: lightgrey;
+    transition: 0.2s;
+}
+
+.list a:hover{
+    color: white;
+    text-decoration: none !important;
+}
+#footer{
+    width: 100%;
+    height: 30px;
+    background: #006622;
+    bottom: 0;
+    position: fixed;
+    border-top: solid thin #333333;
+    transition: 0.5s;
+    z-index: 1001;
+}
+
+#fp{
+    font-size: 20px;
+    font-family: "Segoe UI light";
+    color: white;
+    text-align: center;
+}
+#fb{
+    float: right;
+    color: white;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+#fb:hover{
+    opacity: 0.6;
+}
+#parcelmenu, #profilemenu{
+    overflow: hidden;
+}
+.sidenavcontent{
+    padding-bottom: 20px;
+}
+
+#profiledisplay{
+    align-content: center;
+    text-align: center;
+    font-family: "Segoe UI light";
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .incontentchange {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
