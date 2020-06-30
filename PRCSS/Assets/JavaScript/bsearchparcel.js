@@ -1,0 +1,29 @@
+$(document).ready(function(){
+    $("#panel1").hide();
+    $("#panel2").hide();
+    $("#panel3").hide();
+    $("#schbtn1").click(function(){
+        $("#panel2").slideUp("slow");
+        $("#signtrans2").removeClass("glyphicon-minus");
+        $("#panel3").slideUp("slow");
+        $("#signtrans3").removeClass("glyphicon-minus");
+        $("#panel1").toggle("slow");
+        $("#signtrans1").toggleClass("glyphicon-minus");
+    });
+    $("#schbtn2").click(function(){
+        $("#panel1").slideUp("slow");
+        $("#signtrans1").removeClass("glyphicon-minus");
+        $("#panel3").slideUp("slow");
+        $("#signtrans3").removeClass("glyphicon-minus");
+        $("#panel2").toggle("slow");
+        $("#signtrans2").toggleClass("glyphicon-minus");
+    });
+    $("#schbtn3").click(function(){
+        $("#panel2").slideUp("slow");
+        $("#signtrans2").removeClass("glyphicon-minus");
+        $("#panel1").slideUp("slow");
+        $("#signtrans1").removeClass("glyphicon-minus");
+        $("#panel3").toggle("slow");
+        $("#signtrans3").toggleClass("glyphicon-minus");
+    });
+});
